@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^registerSuccessBlock)(NSString * userName , NSString* password);
 
 @interface KRRegisterViewController : UIViewController
 
+@property(nonatomic,copy)registerSuccessBlock registerCompleteHandle;
 
 @end

@@ -22,7 +22,7 @@ typedef enum{
 @class KRXMPPTool;
 //定义协议让控制器知道登入状态
 @protocol  KRXMPPToolDelegate<NSObject>
-
+@optional
 - (void)KRXMPPTool:(KRXMPPTool*)xmppTool loginState:(KRXMPPToolLogInState)state;
 
 - (void)KRXMPPTool:(KRXMPPTool*)xmppTool registerState:(KRXMPPToolRegisterState)state;
