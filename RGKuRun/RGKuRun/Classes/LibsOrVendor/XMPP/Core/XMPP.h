@@ -9,7 +9,7 @@
 #import "XMPPMessage.h"
 #import "XMPPPresence.h"
 #import "XMPPModule.h"
-
+#import <UIKit/UIKit.h>
 //
 // Authentication
 // 

@@ -7,7 +7,16 @@
  5. 授权成功后就发送在线消息
  
  */
+//主机名
+//#define KRXMPPHOSTNAME @"127.0.0.1"     //ip映射地址
+//#define KRXMPPHOSTNAME @"172.16.9.15"    //本机IP
 
+#define KRXMPPHOSTNAME @"172.16.9.14"
+
+//端口号
+#define KRXMPPPORT 5222
+//域名
+#define KRXMPPDOMAIN @"tedu.cn"
 
 
 
