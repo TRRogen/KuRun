@@ -39,6 +39,15 @@ singleton_interface(KRXMPPTool)
 //XMPPStream的是和XMPP server交换的核心类
 @property(nonatomic,strong)XMPPStream *xmppStream;
 
+
+//电子名片模块
+@property(nonatomic,strong)XMPPvCardTempModule *xmppVCard;
+//电子名片模块对应的存储
+@property(nonatomic,strong)XMPPvCardCoreDataStorage *xmppVCardStorage;
+//头像模块
+@property(nonatomic,strong)XMPPvCardAvatarModule *xmppVCardAvatar;
+
+
 //登入的公开方法
 - (void)userLogin;
 //注册的公开方法

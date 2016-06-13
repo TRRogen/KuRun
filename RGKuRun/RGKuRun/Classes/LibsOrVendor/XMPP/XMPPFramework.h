@@ -49,8 +49,9 @@
 //#import "XMPPRoomCoreDataStorage.h"
 //#import "XMPPRoomHybridStorage.h"
 //
-//#import "XMPPvCardTempModule.h"
-//#import "XMPPvCardCoreDataStorage.h"
+//**********电子名片模块**************
+#import "XMPPvCardTempModule.h"
+#import "XMPPvCardCoreDataStorage.h"//电子名片模块的存储
 //
 //#import "XMPPPubSub.h"
 //
@@ -65,8 +66,8 @@
 //
 //#import "XMPPCapabilities.h"
 //#import "XMPPCapabilitiesCoreDataStorage.h"
-//
-//#import "XMPPvCardAvatarModule.h"
+//***********头像模块************
+#import "XMPPvCardAvatarModule.h"
 //
 //#import "XMPPMessage+XEP_0184.h"
 //

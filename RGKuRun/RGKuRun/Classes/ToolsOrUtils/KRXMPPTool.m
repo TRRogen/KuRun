@@ -11,7 +11,7 @@
 //#define KRXMPPHOSTNAME @"127.0.0.1"     //ip映射地址
 //#define KRXMPPHOSTNAME @"172.16.9.15"    //本机IP
 
-#define KRXMPPHOSTNAME @"172.16.9.14"
+#define KRXMPPHOSTNAME @"172.16.9.65"
 
 //端口号
 #define KRXMPPPORT 5222
@@ -83,6 +83,14 @@ singleton_implementation(KRXMPPTool)
     self.xmppStream = [XMPPStream new];
     //设置delegate
     [self.xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
+    
+    //初始化电子名片模块
+    _xmppVCardStorage = [XMPPvCardCoreDataStorage sharedInstance];
+    _xmppVCard = [[XMPPvCardTempModule alloc]initWithvCardStorage:_xmppVCardStorage];
+    _xmppVCardAvatar = [[XMPPvCardAvatarModule alloc]initWithvCardTempModule:_xmppVCard];
+    
+    [_xmppVCard activate:_xmppStream];
+    [_xmppVCardAvatar activate:_xmppStream];
     
 }
 

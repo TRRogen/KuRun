@@ -138,7 +138,6 @@
 		1A383EFC1D0679AC00B792D5 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A383E6B1D0679AC00B792D5 /* DDTTYLogger.m */; };
 		1A383EFD1D0679AC00B792D5 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A383E6E1D0679AC00B792D5 /* ContextFilterLogFormatter.m */; };
 		1A383EFE1D0679AC00B792D5 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A383E701D0679AC00B792D5 /* DispatchQueueLogFormatter.m */; };
-		1A383EFF1D0679AC00B792D5 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A383E711D0679AC00B792D5 /* README.txt */; };
 		1A383F001D0679AC00B792D5 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A383E761D0679AC00B792D5 /* NSString+DDXML.m */; };
 		1A383F011D0679AC00B792D5 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A383E791D0679AC00B792D5 /* DDXMLDocument.m */; };
 		1A383F021D0679AC00B792D5 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A383E7B1D0679AC00B792D5 /* DDXMLElement.m */; };
@@ -535,8 +534,6 @@
 		1A383AE81D0657DF00B792D5 = {
 			isa = PBXGroup;
 			children = (
-				1A4AA78D1D067CD8006A7BDC /* libresolv.tbd */,
-				1A4AA78B1D067CBE006A7BDC /* libxml2.tbd */,
 				1A383AF31D0657DF00B792D5 /* RGKuRun */,
 				1A383B0D1D0657DF00B792D5 /* RGKuRunTests */,
 				1A383B181D0657DF00B792D5 /* RGKuRunUITests */,
@@ -617,6 +614,8 @@
 		1A383B301D065A3200B792D5 /* LibsOrVendor */ = {
 			isa = PBXGroup;
 			children = (
+				1A4AA78D1D067CD8006A7BDC /* libresolv.tbd */,
+				1A4AA78B1D067CBE006A7BDC /* libxml2.tbd */,
 				1ACC92221D080C3A003B177C /* MBProgessHUD */,
 				1A383D371D0679AC00B792D5 /* XMPP */,
 				1ACC92021D07EF2A003B177C /* AFNetworking */,
@@ -1630,7 +1629,6 @@
 				1A383B011D0657DF00B792D5 /* Assets.xcassets in Resources */,
 				1A383AFF1D0657DF00B792D5 /* Main.storyboard in Resources */,
 				1A383B391D065AED00B792D5 /* LogInAndRegister.storyboard in Resources */,
-				1A383EFF1D0679AC00B792D5 /* README.txt in Resources */,
 				1ACC92291D080C3A003B177C /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
